@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Números Moçambicanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Números Moçambicanos</h1>
+        <div class="button-container">
+            <button onclick="gerarNumeros(300)">Gerar 300 Números</button>
+            <button onclick="gerarNumeros(500)">Gerar 500 Números</button>
+            <button onclick="gerarNumeros(1000)">Gerar 1000 Números</button>
+        </div>
+        <textarea id="numerosGerados" readonly placeholder="Os números gerados aparecerão aqui..."></textarea>
+        <div class="button-container">
+            <button onclick="baixarNumeros('txt')">Baixar TXT</button>
+            <button onclick="baixarNumeros('csv')">Baixar CSV</button>
+            <button onclick="baixarNumeros('xls')">Baixar XLS</button>
+            <button onclick="copiarNumeros()">Copiar Números</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
